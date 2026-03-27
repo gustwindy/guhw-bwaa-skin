@@ -17,6 +17,12 @@ def set_opacity(img: Image.Image,opacity: float):
     img.putalpha(a)
     return img
 
+def set_color(img: Image.Image, color: tuple):
+    img = img.convert("RGBA")
+    r, g, b, a = img.split()
+    colored = Image.new("RGBA", img.size, (*color, 255))
+    colored.putalpha(a)
+    return colored
 
 def logger(name):
     print(f"\t{name}")

@@ -1,5 +1,6 @@
 {
     "button-left": ["button-left"],
+    "button-middle": ["button-middle"],
     "button-right": ["button-right"],
     "star": ["star"],
     "circles/cursor": ["cursor"],
@@ -15,10 +16,17 @@
 
         "hit300",
         "hit300g",
-        "hit300k"
+        "hit300k",
+
+        "hitcircleoverlay",
+        "hitcircle"
     ],
+
+    "circles/cursorsmoke": ["cursor-smoke.png"],
+
 
     "circles/spinner": ["spinner-bottom.png"],
     "circles/slidermove": ["sliderfollowcircle"],
-    "circles/sliderpoint": ["sliderscorepoint"]
+    "circles/sliderpoint": ["sliderscorepoint"],
+    "circles/backwards": ["reversearrow"]
 }

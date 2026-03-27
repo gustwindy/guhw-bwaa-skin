@@ -1,5 +1,6 @@
 import shutil
 import os
+import gameplay
 import judgement
 import mods
 import move_over
@@ -14,6 +15,7 @@ print("-- building skin")
 mods.build()
 move_over.build()
 judgement.build()
+gameplay.build()
 
 print("-- preparing for distribution")
 shutil.rmtree("dist",True)

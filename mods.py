@@ -23,7 +23,7 @@ mods = {
     "cinema": "cn",
     "autoplay": "au"
 }
-font = ImageFont.FreeTypeFont("assets/font.otf",64)
+font = ImageFont.FreeTypeFont("assets/font.ttf",64)
 
 def build():
     log = utils.logger("creating mod icons")
