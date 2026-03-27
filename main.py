@@ -5,6 +5,7 @@ import judgement
 import mods
 import move_over
 import rankings
+import sounds
 import text
 
 print("-- clearing old version")
@@ -18,6 +19,7 @@ judgement.build()
 move_over.build()
 rankings.build()
 gameplay.build()
+sounds.build()
 mods.build()
 text.build()
 
