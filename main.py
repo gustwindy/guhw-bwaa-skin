@@ -4,6 +4,7 @@ import gameplay
 import judgement
 import mods
 import move_over
+import rankings
 import text
 
 print("-- clearing old version")
@@ -18,6 +19,7 @@ move_over.build()
 judgement.build()
 gameplay.build()
 text.build()
+rankings.build()
 
 print("-- preparing for distribution")
 shutil.rmtree("dist",True)

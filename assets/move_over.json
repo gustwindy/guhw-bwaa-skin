@@ -23,10 +23,10 @@
         "score-x"
     ],
 
-    "circles/cursorsmoke": ["cursor-smoke.png"],
+    "circles/cursorsmoke": ["cursor-smoke"],
 
-
-    "circles/spinner": ["spinner-bottom.png"],
+    "menu-button-background": ["menu-button-background"],
+    "circles/spinner": ["spinner-bottom"],
     "circles/slidermove": ["sliderfollowcircle"],
     "circles/sliderpoint": ["sliderscorepoint"],
     "circles/backwards": ["reversearrow"]

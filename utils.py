@@ -28,9 +28,11 @@ def set_color(img: Image.Image, color: tuple):
     colored.putalpha(a)
     return colored
 
-font = ImageFont.FreeTypeFont("assets/font.ttf",64)
+hex_to_rgb = lambda h: (int(h[i:i+2], 16) for i in (0, 2, 4))
+
 dummy = ImageDraw.Draw(Image.new("RGB",(1,1)))
 def create_text(text,size,color="white"):
+    font = ImageFont.truetype("assets/font.ttf", size)
     x,y,w,h = dummy.textbbox((0,0),text,font=font,font_size=size)
     
     img = Image.new("RGBA",(w+6,h+6))
@@ -38,6 +40,10 @@ def create_text(text,size,color="white"):
     draw.text((3,3),text,font=font,fill=color,font_size=size,stroke_fill="black",stroke_width=2)
     
     return img
+
+def scale_to_fit(img: Image.Image,max_size: int):
+    ratio = min(max_size / img.width, max_size / img.height)
+    return img.resize((int(img.width * ratio), int(img.height * ratio)), Image.LANCZOS)
 
 def logger(name):
     print(f"\t{name}")

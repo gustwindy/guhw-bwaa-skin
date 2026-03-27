@@ -8,6 +8,4 @@ def build():
         sizes = json.load(f)
     for font_size,texts in sizes.items():
         for filename,text in texts.items():
-            utils.save_2x(utils.create_text(text,font_size),f"build/{filename}.png")
-
-build()
+            utils.save_2x(utils.create_text(text,int(font_size)),f"build/{filename}.png")
