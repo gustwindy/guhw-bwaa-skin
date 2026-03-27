@@ -29,6 +29,6 @@ os.mkdir("dist")
 
 print("-- .osz")
 #os.system("zip -r \"dist/z~◊《 bwaa 》~《 guhw's skin 》~ ◊~z.osz\" build/")
-os.system("zip -r \"dist/zzz._.bwaa._.guhw_skin._.zzz.osz\" build/") # i guess we gotta do this now
+os.system("zip -rj \"dist/zzz._.bwaa._.guhw_skin._.zzz.osz\" build/*") # i guess we gotta do this now
 
 print("-- done! dist/*.osz & build/")
