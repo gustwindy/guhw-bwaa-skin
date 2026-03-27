@@ -25,9 +25,12 @@
 
     "gameplay/circles/cursorsmoke": ["cursor-smoke"],
 
-    "songselect/menu-button-background": ["menu-button-background"],
+    "songselect/button": ["menu-button-background"],
     "gameplay/circles/spinner": ["spinner-bottom"],
     "gameplay/circles/slidermove": ["sliderfollowcircle"],
     "gameplay/circles/sliderpoint": ["sliderscorepoint"],
-    "gameplay/circles/backwards": ["reversearrow"]
+    "gameplay/circles/backwards": ["reversearrow"],
+
+    "gameplay/inputoverlay/key": ["inputoverlay-key"],
+    "gameplay/inputoverlay/background": ["inputoverlay-background"]
 }

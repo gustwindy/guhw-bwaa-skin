@@ -14,12 +14,12 @@ shutil.copy("assets/skin.ini","build/skin.ini")
 
 print("-- building skin")
 
-mods.build()
-move_over.build()
 judgement.build()
-gameplay.build()
-text.build()
+move_over.build()
 rankings.build()
+gameplay.build()
+mods.build()
+text.build()
 
 print("-- preparing for distribution")
 shutil.rmtree("dist",True)
