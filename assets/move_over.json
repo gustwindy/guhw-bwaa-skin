@@ -1,9 +1,9 @@
 {
-    "button-left": ["button-left"],
-    "button-middle": ["button-middle"],
-    "button-right": ["button-right"],
-    "star": ["star"],
-    "circles/cursor": ["cursor"],
+    "button/left": ["button-left"],
+    "button/middle": ["button-middle"],
+    "button/right": ["button-right"],
+    "songselect/star": ["star"],
+    "gameplay/circles/cursor": ["cursor"],
     "nothing": [
         "cursortrail",
         "star2",
@@ -23,11 +23,11 @@
         "score-x"
     ],
 
-    "circles/cursorsmoke": ["cursor-smoke"],
+    "gameplay/circles/cursorsmoke": ["cursor-smoke"],
 
-    "menu-button-background": ["menu-button-background"],
-    "circles/spinner": ["spinner-bottom"],
-    "circles/slidermove": ["sliderfollowcircle"],
-    "circles/sliderpoint": ["sliderscorepoint"],
-    "circles/backwards": ["reversearrow"]
+    "songselect/menu-button-background": ["menu-button-background"],
+    "gameplay/circles/spinner": ["spinner-bottom"],
+    "gameplay/circles/slidermove": ["sliderfollowcircle"],
+    "gameplay/circles/sliderpoint": ["sliderscorepoint"],
+    "gameplay/circles/backwards": ["reversearrow"]
 }

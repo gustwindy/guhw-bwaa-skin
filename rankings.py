@@ -16,7 +16,7 @@ rankings = {
 
 def build():
     log = utils.logger("rankings")
-    ranking_bg = Image.open("assets/rankingbg.png")
+    ranking_bg = Image.open("assets/songselect/rankingbg.png")
     for name,color in rankings.items():
         big = utils.create_text(name[0],256,color)
         small = utils.create_text(name[0],64,color)

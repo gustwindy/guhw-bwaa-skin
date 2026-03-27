@@ -5,10 +5,10 @@ def build():
     log = utils.logger("hitcircles")
     small_amount = 0.7
     
-    circle = Image.open("assets/circles/hitcircle.png")
-    approach = Image.open("assets/circles/approach.png")
-    color_circle = Image.open("assets/circles/colorcircle.png")
-    utils.save_2x(utils.set_opacity(Image.open("assets/circles/slidermove.png"),0.25),"build/sliderb.png")
+    circle = Image.open("assets/gameplay/circles/hitcircle.png")
+    approach = Image.open("assets/gameplay/circles/approach.png")
+    color_circle = Image.open("assets/gameplay/circles/colorcircle.png")
+    utils.save_2x(utils.set_opacity(Image.open("assets/gameplay/circles/slidermove.png"),0.25),"build/sliderb.png")
 
     w,h = circle.size
     res_x,res_y = (w*small_amount)/0.8, (h*small_amount)/0.8
@@ -28,7 +28,7 @@ def build():
             continue
         utils.save_2x(blue_circle,f"build/default-{i}.png")
     
-    follow = Image.open("assets/followpoint.png")
+    follow = Image.open("assets/gameplay/followpoint.png")
     empty = Image.open("assets/nothing.png")
     for i in range(60):
         empty.save(f"build/followpoint-{i}.png")
