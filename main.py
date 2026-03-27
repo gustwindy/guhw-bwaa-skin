@@ -7,4 +7,4 @@ shutil.copy("assets/skin.ini","build/skin.ini")
 
 shutil.rmtree("dist",True)
 os.mkdir("dist")
-os.system("zip -r \"dist/z~◊《 Gale 》~《 guhw's skin 》~ ◊~z.osz\" build/")
+os.system("zip -r \"dist/z~◊《 Bwaa 》~《 guhw's skin 》~ ◊~z.osz\" build/")
