@@ -21,11 +21,16 @@ def build():
         big = utils.create_text(name[0],256,color)
         small = utils.create_text(name[0],64,color)
         
-        big = utils.scale_to_fit(big,720)
+        big = utils.scale_to_fit(big,400)
+        bw,bh = big.size
+        to_paste = Image.new("RGBA",(bw+250,bh+400))
+        
+        to_paste.paste(big)
+        
         
         bg = utils.set_color(ranking_bg,utils.hex_to_rgb(color.lstrip("#")))
         w,h = bg.size
         sw,sh = small.size
         bg.paste(small,((w//3)-(sw//2),(h//2)-(sh//2)),mask=small)
-        utils.save_2x(big,f"build/ranking-{name}.png")
+        utils.save_2x(to_paste,f"build/ranking-{name}.png")
         utils.save_2x(bg,f"build/ranking-{name}-small.png")
