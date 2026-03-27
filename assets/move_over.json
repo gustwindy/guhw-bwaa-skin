@@ -20,9 +20,13 @@
 
         "hitcircleoverlay",
         "hitcircle",
-        "score-x"
+        "score-x",
+
+        "selection-tab",
+        "mode-osu-small"
     ],
 
+    "songselect/back": ["menu-back"],
     "gameplay/circles/cursorsmoke": ["cursor-smoke"],
 
     "songselect/button": ["menu-button-background"],
@@ -30,6 +34,21 @@
     "gameplay/circles/slidermove": ["sliderfollowcircle"],
     "gameplay/circles/sliderpoint": ["sliderscorepoint"],
     "gameplay/circles/backwards": ["reversearrow"],
+
+    "songselect/topbar": ["songselect-top"],
+    "songselect/bottombar": ["songselect-bottom"],
+    "songselect/modepicker": ["mode-osu-med"],
+    
+    "songselect/buttons/mods": ["selection-mods"],
+    "songselect/buttons/options": ["selection-options"],
+    "songselect/buttons/random": ["selection-random"],
+    "songselect/buttons/mode": ["selection-mode"],
+    "songselect/buttons/mode-hover": ["selection-mode-over"],
+    "songselect/buttons/hover": [
+        "selection-mods-over",
+        "selection-options-over",
+        "selection-random-over"
+    ],
 
     "gameplay/inputoverlay/key": ["inputoverlay-key"],
     "gameplay/inputoverlay/background": ["inputoverlay-background"]
