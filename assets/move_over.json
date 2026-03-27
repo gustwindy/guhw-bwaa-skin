@@ -1,0 +1,24 @@
+{
+    "button-left": ["button-left"],
+    "button-right": ["button-right"],
+    "star": ["star"],
+    "circles/cursor": ["cursor"],
+    "nothing": [
+        "cursortrail",
+        "star2",
+        "spinner-osu",
+        "spinner-middle2",
+        "spinner-middle",
+        "spinner-top",
+        "spinner-glow",
+        "spinner-approachcircle",
+
+        "hit300",
+        "hit300g",
+        "hit300k"
+    ],
+
+    "circles/spinner": ["spinner-bottom.png"],
+    "circles/slidermove": ["sliderfollowcircle"],
+    "circles/sliderpoint": ["sliderscorepoint"]
+}
