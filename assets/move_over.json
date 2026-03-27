@@ -19,7 +19,8 @@
         "hit300k",
 
         "hitcircleoverlay",
-        "hitcircle"
+        "hitcircle",
+        "score-x"
     ],
 
     "circles/cursorsmoke": ["cursor-smoke.png"],

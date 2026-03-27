@@ -12,9 +12,9 @@ def build():
         for filename,text in texts.items():
             x,y,w,h = dummy.textbbox((0,0),text,font=font,font_size=font_size)
             
-            img = Image.new("RGBA",(w,h))
+            img = Image.new("RGBA",(w+6,h+6))
             draw = ImageDraw.Draw(img)
-            draw.text((0,0),text,font=font,font_size=font_size,stroke_fill="black",stroke_width=2)
+            draw.text((3,3),text,font=font,font_size=font_size,stroke_fill="black",stroke_width=2)
             
             utils.save_2x(img,f"build/{filename}.png")
 

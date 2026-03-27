@@ -1,14 +1,18 @@
 from PIL import Image
 
-def save_2x(img: Image.Image,path: str):
-    img.save(path.replace(".","@2x."))
+def save_2x(img: Image.Image,path: str,big_path = None):
+    img.save(big_path or path.replace(".","@2x."))
     w,h = img.size
     img.resize((w//2,h//2)).save(path)
     print("\t\t\t+",path)
 
-def save_anim(img: Image.Image,path: str,frames: int):
+def save_anim(img: Image.Image,path: str,frames: int,include_none = False,last_empty = False):
     for i in range(frames):
-        save_2x(img,path.replace(".",f"-{i}."))
+        save_2x(img,path.replace(".",f"-{i}."))#,path.replace(".",f"@2x-{i}.")) #what is going on
+    if include_none:
+        save_2x(img,path)
+    if last_empty:
+        save_2x(Image.new("RGBA",img.size),path.replace(".",f"-{frames}."))
 
 def set_opacity(img: Image.Image,opacity: float):
     img = img.convert("RGBA")
