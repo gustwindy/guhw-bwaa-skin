@@ -1,12 +1,6 @@
 import shutil
 import os
-import gameplay
-import judgement
-import mods
-import move_over
-import rankings
-import sounds
-import text
+from parts import gameplay, judgement, mods, move_over, rankings, sounds, text
 
 print("-- clearing old version")
 shutil.rmtree("build",True)
@@ -14,7 +8,6 @@ os.mkdir("build")
 shutil.copy("assets/skin.ini","build/skin.ini")
 
 print("-- building skin")
-
 judgement.build()
 move_over.build()
 rankings.build()
