@@ -8,7 +8,7 @@
         "cursortrail",
         "star2",
         "spinner-osu",
-        "spinner-middle2",
+        "spinner-bottom",
         "spinner-middle",
         "spinner-top",
         "spinner-glow",
@@ -25,14 +25,15 @@
         "mode-osu-small",
         "ranking-title",
         "ranking-maxcombo",
-        "ranking-accuracy"
+        "ranking-accuracy",
+        "lighting"
     ],
 
     "songselect/back": ["menu-back"],
     "gameplay/circles/cursorsmoke": ["cursor-smoke"],
 
     "songselect/button": ["menu-button-background"],
-    "gameplay/circles/spinner": ["spinner-bottom"],
+    "gameplay/circles/spinner": ["spinner-middle2"],
     "gameplay/circles/slidermove": ["sliderfollowcircle"],
     "gameplay/circles/sliderpoint": ["sliderscorepoint"],
     "gameplay/circles/backwards": ["reversearrow"],
@@ -66,6 +67,8 @@
     "pause/replay": ["pause-replay"],
     "pause/indicator": ["play-warningarrow"],
 
+    "gameplay/skip": ["play-skip"],
+    "gameplay/multi-skip": ["multi-skip"],
     "gameplay/healthbar": ["scorebar-bg"],
     "gameplay/healthbar-color": ["scorebar-colour"]
 }
