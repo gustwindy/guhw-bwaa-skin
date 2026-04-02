@@ -19,13 +19,13 @@ def build(variant):
         
         cursor = Image.open("assets/gameplay/circles/variants/normal/cursor.png")
         cursor_middle = Image.open("assets/gameplay/circles/variants/normal/cursoroverlay.png")
-        trail = Image.open("assets/gameplay/circles/variants/normal/cursortrail.png")
+        #trail = Image.open("assets/gameplay/circles/variants/normal/cursortrail.png")
         w,h = cursor.size
         res = (w//3,h//3)
         
         utils.save_2x(cursor.resize(res),"build/cursor.png")
         utils.save_2x(cursor_middle.resize(res),"build/cursormiddle.png")
-        utils.save_2x(trail,"build/cursortrail.png")
+        #utils.save_2x(trail,"build/cursortrail.png")
         
         for i in range(10):
             number = utils.create_text(str(i),128,font="assets/otherfont.ttf")
