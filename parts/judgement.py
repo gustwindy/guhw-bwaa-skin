@@ -24,11 +24,11 @@ def build(variant):
             for f in range(60):
                 anim = utils.set_color(effect,utils.hex_to_rgb(color))
                 t_half_in = utils.unit(0, 40, f)
-                t_judge_in = utils.unit(0, 20, f)
+                t_judge_in = utils.unit(0, 30, f)
                 t_judge_out = utils.unit(40, 60, f)
                 t_half_out = utils.unit(40, 60, f)
 
-                scale = 0.6+(easeOutExpo(t_judge_in)*0.4)
+                scale = 0.4+(easeOutExpo(t_judge_in)*0.6)
                 w, h = img.size
                 scaled_img = img.resize((int(w*scale), int(h*scale)))
 
@@ -40,7 +40,7 @@ def build(variant):
                 else:
                     drop = int(easeInExpo(t_judge_out)*20)
                     anim = utils.set_opacity(anim,1-easeInExpo(t_half_out))
-                    p = utils.set_opacity(scaled_img,1-easeInExpo(t_half_out))
+                    p = utils.set_opacity(scaled_img,1-easeInExpo(t_half_out)).rotate(easeInExpo(t_half_out)*-15)
                     offset = ((anim.width-p.width)//2, ((anim.height-p.height)//2) + drop)
                     anim.paste(p,offset,mask=p)
             
