@@ -13,7 +13,7 @@ def build_variant(variant):
 
     print("-- building skin")
     skin_ini.build(variant)
-    judgement.build()
+    judgement.build(variant)
     move_over.build()
     rankings.build()
     gameplay.build(variant)
@@ -30,5 +30,5 @@ def build_variant(variant):
     print(f"-- done with {variant}! dist/ & build/")
 
 
-build_variant("default")
 build_variant("performance")
+build_variant("default")

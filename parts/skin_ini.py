@@ -26,7 +26,7 @@ fallback = {
         "HitCircleOverlayAboveNumber": 1,
         "SpinnerFadePlayfield": 0,
         "AllowSliderBallTint": 0,
-        "AnimationFramrate": 24
+        "AnimationFramerate": 60
     },
     "Colours": {
         "SongSelectActiveText": "#FFFFFF",
@@ -49,7 +49,7 @@ fallback = {
 variants = {
     "default": {
         "General": {
-            #"CursorExpand": 1,
+            "CursorExpand": 1,
         },
         "Colours": {
             "Combo1": "#96E6FF",

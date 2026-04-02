@@ -1,5 +1,8 @@
 from PIL import Image,ImageDraw,ImageFont
 
+remap = lambda s1,e1,s2,e2,v: s2+(((v-s1)/(e1-s1))*(e2-s2))
+unit = lambda s,e,v: remap(s,e,0,1,v)
+
 def save_2x(img: Image.Image,path: str,big_path = None):
     img.save(big_path or path.replace(".","@2x."))
     w,h = img.size

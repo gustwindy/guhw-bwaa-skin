@@ -21,12 +21,10 @@ def build(variant):
         cursor_middle = Image.open("assets/gameplay/circles/variants/normal/cursoroverlay.png")
         trail = Image.open("assets/gameplay/circles/variants/normal/cursortrail.png")
         w,h = cursor.size
-        w2,h2 = cursor_middle.size
-        res = (w//2,h//2)
-        res2 = (w2//2,h2//2)
+        res = (w//3,h//3)
         
         utils.save_2x(cursor.resize(res),"build/cursor.png")
-        utils.save_2x(cursor_middle.resize(res2),"build/cursormiddle.png")
+        utils.save_2x(cursor_middle.resize(res),"build/cursormiddle.png")
         utils.save_2x(trail,"build/cursortrail.png")
         
         for i in range(10):
@@ -41,7 +39,6 @@ def build(variant):
         circle = Image.open("assets/gameplay/circles/hitcircle.png")
         approach = Image.open("assets/gameplay/circles/approach.png")
         color_circle = Image.open("assets/gameplay/circles/colorcircle.png")
-        utils.save_2x(utils.set_opacity(Image.open("assets/gameplay/circles/slidermove.png"),0.25),"build/sliderb.png")
 
         w,h = circle.size
         res_x,res_y = (w*small_amount)/0.8, (h*small_amount)/0.8
@@ -61,6 +58,7 @@ def build(variant):
                 continue
             utils.save_2x(blue_circle,f"build/default-{i}.png")
     
+    utils.save_2x(utils.set_opacity(Image.open("assets/gameplay/circles/slidermove.png"),0.25),"build/sliderb.png")
     empty = Image.open("assets/nothing.png")
     for i in range(60):
         empty.save(f"build/followpoint-{i}.png")
