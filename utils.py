@@ -28,11 +28,11 @@ def set_color(img: Image.Image, color: tuple):
     colored.putalpha(a)
     return colored
 
-hex_to_rgb = lambda h: (int(h[i:i+2], 16) for i in (0, 2, 4))
+hex_to_rgb = lambda h: (int(h.lstrip("#")[i:i+2], 16) for i in (0, 2, 4))
 
 dummy = ImageDraw.Draw(Image.new("RGB",(1,1)))
-def create_text(text,size,color="white"):
-    font = ImageFont.truetype("assets/font.ttf", size)
+def create_text(text,size,color="white",font="assets/font.ttf"):
+    font = ImageFont.truetype(font, size)
     x,y,w,h = dummy.textbbox((0,0),text,font=font,font_size=size)
     
     img = Image.new("RGBA",(w+6,h+6))

@@ -6,10 +6,12 @@
     "gameplay/circles/cursor": ["cursor"],
     "nothing": [
         "cursortrail",
+        "cursor-middle",
         "star2",
         "spinner-osu",
         "spinner-bottom",
         "spinner-middle",
+        "spinner-rpm",
         "spinner-top",
         "spinner-glow",
         "spinner-approachcircle",
@@ -26,7 +28,8 @@
         "ranking-title",
         "ranking-maxcombo",
         "ranking-accuracy",
-        "lighting"
+        "lighting",
+        "sliderendcircle"
     ],
 
     "songselect/back": ["menu-back"],
