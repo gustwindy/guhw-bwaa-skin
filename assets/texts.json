@@ -1,24 +1,24 @@
 {
     "64": {
-        "scoreentry-percent": "%",
-        "scoreentry-dot": ".",
-        "scoreentry-comma": ",",
-        "scoreentry-9": "9",
-        "scoreentry-8": "8",
-        "scoreentry-7": "7",
-        "scoreentry-6": "6",
-        "scoreentry-5": "5",
-        "scoreentry-4": "4",
-        "scoreentry-3": "3",
-        "scoreentry-2": "2",
-        "scoreentry-1": "1",
-        "scoreentry-0": "0",
-        "play-unranked": "Unranked"
+        "scoreentry-percent": "bwaa",
+        "scoreentry-dot": "bwaa",
+        "scoreentry-comma": "bwaa",
+        "scoreentry-9": "bwaa",
+        "scoreentry-8": "bwaa",
+        "scoreentry-7": "bwaa",
+        "scoreentry-6": "bwaa",
+        "scoreentry-5": "bwaa",
+        "scoreentry-4": "bwaa",
+        "scoreentry-3": "bwaa",
+        "scoreentry-2": "bwaa",
+        "scoreentry-1": "bwaa",
+        "scoreentry-0": "bwaa",
+        "play-unranked": "bwaa"
     },
     "128": {
-        "count1": "1",
-        "count2": "2",
-        "count3": "3",
+        "count1": "bwaa",
+        "count2": "bwaa",
+        "count3": "bwaa",
         "go": "bwaa",
         "ready": "bwaa"
     }
