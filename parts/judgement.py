@@ -11,7 +11,7 @@ def easeInExpo(t):
 def build(variant):
     log = utils.logger("judgement")
     
-    if variant == "default":
+    if variant.startswith("default"):
         effect = Image.open("assets/gameplay/hit/variants/normal/effect.png")
         judgement = {
             "50": ["#FFBD32", Image.open("assets/gameplay/hit/variants/normal/50.png")],

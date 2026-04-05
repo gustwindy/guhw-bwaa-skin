@@ -69,6 +69,15 @@ variants = {
     }
 }
 
+variants["default-grey"] = variants["default"].copy()
+variants["default-grey"]["Colours"] = {
+    "Combo1": "#FFFFFF",
+    "Combo2": "#FFFFFF",
+    "Combo3": "#FFFFFF",
+    "SliderBorder": "#857D86",
+    "SliderTrackOverride": "#2B292C"
+}
+
 def build(variant):
     current = fallback.copy()
     target = variants[variant]

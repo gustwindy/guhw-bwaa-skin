@@ -6,19 +6,27 @@ def build(variant):
     small_amount = 0.7
     follow = Image.open("assets/gameplay/followpoint.png")
     
-    if variant == "default":
+    if variant.startswith("default"):
         follow = Image.open("assets/gameplay/followpoint-grey.png")
         circle = Image.open("assets/gameplay/circles/variants/normal/hitcircle.png")
         approach = Image.open("assets/gameplay/circles/variants/normal/approach.png")
         color_circle = Image.open("assets/gameplay/circles/variants/normal/colorcircle.png")
         
         utils.save_2x(approach,"build/approachcircle.png")
-        utils.save_2x(circle,"build/hitcircleoverlay.png")
-        utils.save_2x(color_circle,"build/hitcircle.png")
+        if variant.endswith("grey"):
+            grey_circle = utils.set_color(color_circle,(25,25,25))
+            grey_circle.paste(circle,mask=circle)
+            utils.save_2x(grey_circle,"build/hitcircleoverlay.png")
+        else:
+            utils.save_2x(circle,"build/hitcircleoverlay.png")
+            utils.save_2x(color_circle,"build/hitcircle.png")
         
         
         cursor = Image.open("assets/gameplay/circles/variants/normal/cursor.png")
-        cursor_middle = Image.open("assets/gameplay/circles/variants/normal/cursoroverlay.png")
+        if variant.endswith("grey"):
+            cursor_middle = Image.open("assets/gameplay/circles/variants/red_cursor.png")
+        else:
+            cursor_middle = Image.open("assets/gameplay/circles/variants/normal/cursoroverlay.png")
         #trail = Image.open("assets/gameplay/circles/variants/normal/cursortrail.png")
         w,h = cursor.size
         res = (w//3,h//3)

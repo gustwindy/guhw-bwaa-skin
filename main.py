@@ -32,3 +32,4 @@ def build_variant(variant):
 
 build_variant("performance")
 build_variant("default")
+build_variant("default-grey")
